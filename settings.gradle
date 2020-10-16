@@ -1,0 +1,3 @@
+include ':ImageGraberLib'
+include ':app'
+rootProject.name = "ImageGraber"

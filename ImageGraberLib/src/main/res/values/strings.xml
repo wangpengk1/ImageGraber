@@ -1,0 +1,34 @@
+<resources>
+    <string name="TAG_FAKE_STATUS_BAR_VIEW">TAG_FAKE_STATUS_BAR_VIEW</string>
+    <string name="TAG_MARGIN_ADDED">TAG_MARGIN_ADDED</string>
+
+    <string name="image_enable_storage_permission">开启存储权限</string>
+
+    <string name="image_enable_storage_tips">相册功能需要使用到存储权限，请在设置中开启此应用的存储权限</string>
+
+    <string name="edit">编辑</string>
+    <string name="choose_single">单选</string>
+    <string name="choose_images">选择图片</string>
+    <string name="default_max_count">9</string>
+    <string name="choose_multi">多选</string>
+
+    <string name="image_edit">图片编辑</string>
+    <string name="image_album">相册</string>
+    <string name="custom_album">自定义相册</string>
+
+
+    <string name="image_doodle">涂鸦</string>
+    <string name="image_text">文字</string>
+    <string name="image_mosaic">马赛克</string>
+    <string name="image_clip">裁剪</string>
+    <string name="image_reset">还原</string>
+    <string name="image_done">完成</string>
+    <string name="image_cancel">取消</string>
+    <string name="image_rotate">旋转</string>
+
+    <string name="image_mosaic_tip">请直接在图片上涂抹虚化</string>
+    <string name="image_undo">撤销</string>
+    <string name="image_all_photo">所有照片</string>
+    <string name="image_original">原图</string>
+    <string name="image_preview">预览</string>
+</resources>

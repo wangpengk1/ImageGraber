@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.newasia.imagegraberlib">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application>
+
+        <activity android:name="com.newasia.imagegraberlib.Activity.IMGGalleryActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.newasia.imagegraberlib.Activity.IMGPreviewActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.IMGEditActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".Activity.IMGCameraActivity" android:screenOrientation="portrait"/>
+
+        <!-- Android 7.0 文件共享配置，必须配置 -->
+        <provider
+            android:name=".Utils.ImageFileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/image_picker" />
+        </provider>
+    </application>
+
+</manifest>
