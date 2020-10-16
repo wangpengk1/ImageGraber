@@ -41,7 +41,7 @@ public class IMGCameraActivity extends AppCompatActivity
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSupportActionBar().hide();
+        if(getActionBar()!=null) getSupportActionBar().hide();
         StatusBarUtils.setStatusBarTranslucent(this);
         mBinding = DataBindingUtil.setContentView(this, R.layout.activity_camera_layout);
         mBinding.rootLayout.setPadding(0, StatusBarUtils.getStatusBarHeight(this),0,0);
